@@ -46,7 +46,7 @@
         function sendMessage() {
             var newMessage = document.getElementById("message");
             if (newMessage != null) {
-                console.log(newChat);
+                conn.send(newMessage.value); // take user input and send on connection
             }
             return false;
         }
